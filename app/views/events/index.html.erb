@@ -1,0 +1,7 @@
+<div id="events-list">
+  <% @events.each do |event| %>
+    <div class="event">
+      <%= render event.action, event: event %>
+    </div>
+  <% end %>
+</div>

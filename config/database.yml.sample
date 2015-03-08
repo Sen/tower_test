@@ -1,0 +1,19 @@
+common: &common
+  adapter: postgresql
+  encoding: utf8
+  username: postgres
+  password:
+  host: localhost
+
+development:
+  <<: *common
+  database: tower_dev
+
+test: &test
+  <<: *common
+  database: tower_test
+
+production:
+  <<: *common
+  database: tower_production
+

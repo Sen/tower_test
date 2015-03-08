@@ -1,0 +1,4 @@
+<%= event.user.name %> 修改了任务的完成时间: <%= event.target.body %>  ---  项目: <%= event.project.name %>
+<br />
+由<%= event_get_value(event, :before_value, as: :datetime) %>修改为<%= event_get_value(event, :after_value, as: :datetime) %>
+

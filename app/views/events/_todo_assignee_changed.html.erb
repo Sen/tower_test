@@ -1,0 +1,3 @@
+<% old_assignee = event.get_before_value %>
+<% new_assignee = event.get_after_value %>
+<%= event.user.name %> 给修改了任务: <%= event.target.body %> 的负责人，由<%= old_assignee.name %>修改为<%= new_assignee.name %>  ---  项目: <%= event.project.name %>
